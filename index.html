@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Flashcard Quiz App</h1>
+    <p class="subtitle">Create, study, edit, and delete your flashcards.</p>
+
+    <section class="card-section">
+      <div class="flashcard">
+        <div id="questionArea">
+          <span class="label">Question</span>
+          <h2 id="question">No flashcards yet</h2>
+        </div>
+
+        <div id="answerArea" class="answer hidden">
+          <span class="label">Answer</span>
+          <p id="answer"></p>
+        </div>
+
+        <button id="showAnswerBtn">Show Answer</button>
+      </div>
+
+      <div class="navigation">
+        <button id="prevBtn">⬅ Previous</button>
+        <span id="counter">0 / 0</span>
+        <button id="nextBtn">Next ➡</button>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <h2>Add / Edit Flashcard</h2>
+      <input type="text" id="questionInput" placeholder="Enter question">
+      <textarea id="answerInput" placeholder="Enter answer"></textarea>
+
+      <div class="form-buttons">
+        <button id="saveBtn">Add Flashcard</button>
+        <button id="cancelBtn" class="secondary hidden">Cancel Edit</button>
+      </div>
+    </section>
+
+    <section class="list-section">
+      <h2>Your Flashcards</h2>
+      <div id="cardList"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
